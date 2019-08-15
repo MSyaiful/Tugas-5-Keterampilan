@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bahantugas1" />
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/gambar">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/list_item"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/gambar"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_view_list_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="List Laptop"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/gambar"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_shopping_cart_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Buy Laptop"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/about"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/gambar"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_info_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="About"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:text="Keluar" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Asus Laptop Store</string>
+    <string name="check">Check</string>
+    <string name="buy">Buy</string>
+    <string name="share">Share</string>
+    <string name="detail">Detail</string>
+    <string name="description">description</string>
+    <string name="nama_laptop">Nama Laptop</string>
+    <string name="from">Merk</string>
+    <string name="with_cardview">With CardView</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string-array name="merk_array">
+        <item>Asus VivoBook 14 A405UQ</item>
+        <item>Asus ROG Strix GL503</item>
+        <item>Asus Transformer Pro T304UA</item>
+        <item>Asus ROG ZEPHYRUS (GX501)</item>
+        <item>Asus ZenBook 3 UX390UA</item>
+        <item>Asus Transformer Book T101HA</item>
+        <item>Asus ROG Strix GL702ZC</item>
+        <item>Asus ZenBook Pro UX550VD</item>
+        <item>Asus Zenbook 13 UX331UN</item>
+        <item>Asus VivoBook Flip TP200SA</item>
+    </string-array>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyActivity">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bahantugas3" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar"
+        android:layout_margin="15dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@android:color/white"
+                android:hint="Nama"
+                android:padding="10dp" />
+        </TableRow>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_merk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Merk Laptop :"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/merk_laptop"
+                android:layout_marginTop="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text_merk" />
+        </RelativeLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@android:color/white"
+                android:hint="Jumlah Laptop"
+                android:padding="10dp" />
+        </TableRow>
+        <CheckBox android:id="@+id/checkbox_meat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Saya Setuju Dengan Ketentuan dan Syarat dari Asus Laptop Store"
+            android:textColor="@android:color/black"
+            android:onClick="onCheckboxClicked"/>
+    </TableLayout>
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/table"
+        android:text="@string/buy"
+        android:textAlignment="center"
+        android:layout_marginLeft="15dp"/>
+
+
+</RelativeLayout>
